@@ -1,0 +1,38 @@
+env:
+  TERM: "xterm-256color"
+
+window:
+  option_as_alt: "Both"
+  decorations: "Buttonless"
+
+font:
+  normal:
+    family: "Liga SFMono Nerd Font"
+    stlye: Medium
+  size: 14
+  offset:
+    x: 0
+    y: 3
+  glyph_offset:
+    x: 0
+    y: 1
+
+colors:
+  primary:
+    background: "#282C34"
+  normal:
+    black: "#282C34"
+    red: "#E06C75"
+    green: "#66fea0"
+    yellow: "#E5C07B"
+    blue: "#61afef"
+    magenta: "#C678DD"
+    cyan: "#56B6C2"
+    white: "#DCDFE4"
+  cursor:
+    text: "#282C34"
+    cursor: "#66fea0"
+
+key_bindings:
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left, mods: Alt, chars: "\x1BB" }
