@@ -1,0 +1,66 @@
+# Helper
+alias note='nvim ~/Documents/note/note.md'
+alias c='bat --style=plain --paging=never'
+alias ce='code .'
+alias t='tmux'
+alias vt='nvim ~/.tmux.conf'
+alias va='nvim ~/.config/alacritty/alacritty.yml'
+alias v='nvim'
+alias o='open'
+alias ol='open log.html'
+alias gfl='git fetch && git pull'
+alias gcod='git checkout develop'
+alias gcom='git checkout master'
+alias bup='brew update && brew upgrade'
+alias ls='exa -h'
+alias l='ls -lh'
+alias ll='ls -lah'
+alias x='exit'
+alias copy='pbcopy'
+alias pwdcp='pwd | pbcopy'
+alias gbc='git branch --show-current'
+alias g='git status'
+alias i='idea .'
+alias k="/usr/bin/osascript -e 'tell application \"System Events\" to tell process \"Terminal\" to keystroke \"k\" using command down'"
+alias vz='v ~/.zshrc'
+alias vza='v ~/.config/zsh/alias'
+alias sz='source ~/.zshrc'
+alias vv='v ~/.vimrc'
+alias vnv='v ~/.config/nvim/init.vim'
+alias r='rm -rf'
+alias rsc='rm Screen\ Shot\ *'
+alias lg='lazygit'
+
+# Java
+alias jv='java -version'
+alias jvc='javac -version'
+
+# Robot
+
+# Maven
+alias m='mvn'
+alias mi='mvn clean install package -D skipTests'
+alias msr='k && mvn spring-boot:run'
+alias mdt='mvn dependency:tree'
+
+# Node
+alias n='npm'
+alias ni='npm install'
+alias ns='npm start'
+
+# Python
+alias pi='pip install -r requirements.txt'
+
+# Go to
+alias d='~'
+alias dl='~/Downloads'
+alias dc='~/Documents'
+alias dt='~/Desktop'
+alias rp='~/repo'
+alias sc='~/script'
+alias sch='~/script/helper'
+alias poc='~/poc'
+
+# Go to - Project
+
+# Credential
