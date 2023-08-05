@@ -8,7 +8,11 @@
     - [x] Install Plugins
     - [x] Install LSP
     - [x] Migrate to Lua script
-    - [ ] Autocomplete
-    - [ ] Debugging
+    - [x] Autocomplete
+    - [ ] Tab to complete
+    - [ ] Toggle comment
+    - [ ] Go to definition
+    - [ ] Rename
     - [ ] Linter
     - [ ] Formatter
+    - [ ] Debugging
