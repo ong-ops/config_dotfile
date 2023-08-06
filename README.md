@@ -10,8 +10,8 @@
     - [x] Migrate to Lua script
     - [x] Autocomplete
     - [x] Toggle comment
-    - [ ] Go to definition
-    - [ ] Rename
+    - [x] Go to definition
+    - [x] Rename
     - [ ] Linter
     - [ ] Formatter
     - [ ] Debugging
