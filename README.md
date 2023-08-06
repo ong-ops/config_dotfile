@@ -9,10 +9,11 @@
     - [x] Install LSP
     - [x] Migrate to Lua script
     - [x] Autocomplete
-    - [ ] Tab to complete
-    - [ ] Toggle comment
+    - [x] Toggle comment
     - [ ] Go to definition
     - [ ] Rename
     - [ ] Linter
     - [ ] Formatter
     - [ ] Debugging
+    - [ ] telescope
+    - [ ] tree-sitter

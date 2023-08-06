@@ -44,6 +44,9 @@ vim.call('plug#begin')
     Plug 'hrsh7th/cmp-vsnip'
     Plug 'hrsh7th/vim-vsnip'
 
+    -- Comment
+    Plug 'numToStr/Comment.nvim'
+
     -- Debugging
     Plug 'mfussenegger/nvim-dap'
     Plug 'rcarriga/nvim-dap-ui'
