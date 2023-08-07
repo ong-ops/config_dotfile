@@ -1,8 +1,6 @@
 -- Setup language servers
 require('mason').setup()
 require('mason-lspconfig').setup()
-require('lspconfig').lua_ls.setup {}
-require('lspconfig').tsserver.setup {}
 
 -- Global mappings
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
