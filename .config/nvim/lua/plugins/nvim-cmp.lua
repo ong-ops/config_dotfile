@@ -4,7 +4,8 @@ cmp.setup({
     snippet = {
         -- REQUIRED - specify a snippet engine
         expand = function(args)
-            vim.fn["vsnip#anonymous"](args.body)
+            -- vim.fn["vsnip#anonymous"](args.body)
+            require('luasnip').lsp_expand(args.body)
         end,
     },
     window = {
@@ -20,7 +21,9 @@ cmp.setup({
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
-        { name = 'vsnip' },
+        { name = 'nvim_lua' },
+        { name = 'lua_snip', option = { show_autosnippets = true } },
+        -- { name = 'vsnip' },
     }, {
         { name = 'buffer' },
     })
