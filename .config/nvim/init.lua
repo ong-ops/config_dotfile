@@ -207,6 +207,7 @@ require('lazy').setup({
   require 'kickstart.plugins.autopairs',
   require 'kickstart.plugins.tree',
   require 'kickstart.plugins.surround',
+  require 'kickstart.plugins.aerial',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
@@ -301,7 +302,10 @@ vim.keymap.set('n', 'dd', '"*dd')
 vim.keymap.set('n', 'D', '"*D')
 
 -- Open file tree
-vim.keymap.set('n', '<leader>t', ':NvimTreeOpen<CR>', { desc = 'Open [T]ree' })
+vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>', { desc = 'Open [T]ree' })
+
+-- Open Aerial
+vim.keymap.set('n', '<leader>a', ':AerialToggle!<CR>', { desc = 'Open [A]erial' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
