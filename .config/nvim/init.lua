@@ -232,6 +232,9 @@ vim.o.cursorline = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 
+-- Tab
+vim.o.expandtab = true
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -479,7 +482,7 @@ end
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
-  -- gopls = {},
+  gopls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
