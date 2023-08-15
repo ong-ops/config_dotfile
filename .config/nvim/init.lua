@@ -208,6 +208,7 @@ require('lazy').setup({
   require 'kickstart.plugins.tree',
   require 'kickstart.plugins.surround',
   require 'kickstart.plugins.aerial',
+  require 'kickstart.plugins.markdown-preview',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
