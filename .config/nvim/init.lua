@@ -70,6 +70,7 @@ require('lazy').setup({
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  'APZelos/blamer.nvim',
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
@@ -92,7 +93,8 @@ require('lazy').setup({
       'folke/neodev.nvim',
     },
   },
-
+  -- Robot Framework
+  { 'mfukar/robotframework-vim' },
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -110,7 +112,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',  opts = {} },
+  { 'folke/which-key.nvim',     opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -223,8 +225,11 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+vim.o.modifiable = true
+
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
+vim.cmd [[highlight Visual guifg=#74FF86 guibg=#18536D gui=none]]
 
 -- Make line numbers default
 vim.wo.number = true
@@ -280,6 +285,7 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- [[ Custom Keymaps ]]
 -- Escape
 vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('t', 'jj', '<C-\\><C-n>')
 
 -- Insert an empty new line without entering insert mode
 vim.keymap.set('n', '<CR>', 'o<Esc>')
@@ -292,10 +298,10 @@ vim.keymap.set('n', '^', '<nop>')
 vim.keymap.set('n', '$', '<nop>')
 
 -- Split navigations
-vim.keymap.set('n', '<C-J>', '<C-W><C-J>')
-vim.keymap.set('n', '<C-K>', '<C-W><C-K>')
-vim.keymap.set('n', '<C-L>', '<C-W><C-L>')
-vim.keymap.set('n', '<C-H>', '<C-W><C-H>')
+vim.keymap.set('n', '<C-J>', '<C-W>j')
+vim.keymap.set('n', '<C-K>', '<C-W>k')
+vim.keymap.set('n', '<C-L>', '<C-W>l')
+vim.keymap.set('n', '<C-H>', '<C-W>h')
 
 -- Use system clipboard
 vim.keymap.set('n', 'y', '"*y')
@@ -457,7 +463,7 @@ local on_attach = function(_, bufnr)
 
   -- See `:help K` for why this keymap
   nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-  nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+  nmap('<C-;>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
   -- Lesser used LSP functionality
   nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -484,6 +490,7 @@ end
 local servers = {
   -- clangd = {},
   gopls = {},
+  robotframework_ls = {},
   -- pyright = {},
   -- rust_analyzer = {},
   -- tsserver = {},
