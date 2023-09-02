@@ -7,9 +7,9 @@ window:
 
 font:
   normal:
-    family: "Liga SFMono Nerd Font"
-    stlye: Medium
-  size: 14
+    family: "RobotoMono Nerd Font"
+    stlye: Regular
+  size: 15
   offset:
     x: 0
     y: 3
