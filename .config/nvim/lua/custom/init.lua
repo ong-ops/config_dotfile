@@ -6,6 +6,9 @@ vim.o.relativenumber = true
 vim.o.splitbelow = true
 vim.o.splitright = true
 
+-- no add newline at end of line in file
+vim.o.fixeol = false
+
 -- Indenting
 vim.o.expandtab = true
 vim.o.shiftwidth = 2
