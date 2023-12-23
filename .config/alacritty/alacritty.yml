@@ -7,9 +7,9 @@ window:
 
 font:
   normal:
-    family: "JetBrains Mono"
+    family: "JetBrainsMono Nerd Font"
     # stlye: Regular
-  size: 15
+  size: 16
   offset:
     x: 0
     y: 3
